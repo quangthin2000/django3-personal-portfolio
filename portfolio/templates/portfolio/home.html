@@ -1,0 +1,323 @@
+{% extends 'portfolio/base.html' %}
+{% block home %}
+{% load static %}
+<section class="home section" id="home">
+    <div class="container">
+        <div class="row">
+            <div class="home-info padd-15">
+                <h3 class="hello">Hello, my name is <span class="name">Tran Quang Thin</span></h3>
+                <h3 class="my-profession">I' m a <span class="typing">Python Developer</span></h3>
+                <p>I'm a Python Developer with extensive experience for over 1 year.</p>
+                <a href="#contact" class="btn hire-me">Hire Me</a>
+            </div>
+            <div class="home-img padd-15">
+                <img src="{% static 'images/avatar.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ===== About Section Start ===== -->
+<section class="about section" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>About Me</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="about-content padd-15">
+                <div class="row">
+                    <div class="about-text padd-15">
+                        <h3>I'm Tran Quang Thin and <span>Web Developer</span></h3>
+                        <p>
+                            I am a final year student of Duy Tan University majoring in Big Data and Machine Learning.
+                            With the specialized
+                            knowledge and skills that I have accumulated when participating in school, I believe that I
+                            am suitable for the
+                            Python developer position of fresher at Rikkeisoft company. In the future, I hope that I
+                            will become an incredible
+                            developer and the opportunity to work at your company will help me improve my capacity.
+                            During my time at
+                            university, I have developed excellent code skills and organizational skills due to a series
+                            of close-knit coursework
+                            deadlines and exams. As a result, I am incredibly adaptable and able to work well under
+                            pressure effectively.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="personal-info padd-15">
+                        <div class="row">
+                            <div class="info-item padd-15">
+                                <p>Birthday : <span>March 20, 2000</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Age : <span>22</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Website : <span>www.fb.com/TuiLaQuangThin/</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Email : <span>quangthin2000@gmail.com</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Degree : <span>Bachelor</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Phone : <span>+84 395. 822. 059</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>City : <span>Danang</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Freelnace : <span>Not Available</span></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="buttons padd-15">
+                                <a href="{% static 'CV.pdf' %}" class="btn">Download CV</a>
+                                <a href="#contact" class="btn hire-me">Hire Me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills padd-15">
+                        <div class="row">
+                            <div class="skill-item padd-15">
+                                <h5>Python</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 86%;"></div>
+                                    <div class="skill-percent">86%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                <h5>PHP</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 66%;"></div>
+                                    <div class="skill-percent">66%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                <h5>HTML</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 70%;"></div>
+                                    <div class="skill-percent">70%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                <h5>Java</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 50%;"></div>
+                                    <div class="skill-percent">50%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="education padd-15">
+                        <h3 class="title">Education</h3>
+                        <div class="row">
+                            <div class="timeline-box padd-15">
+                                <div class="timeline shadow-dark">
+                                    <!-- ===== timeline item ===== -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> 2015-2018
+                                        </h3>
+                                        <h4 class="timeline-title">Nguyen Chi Thanh High School</h4>
+                                        <p class="timeline-text"></p>
+                                    </div>
+                                    <!-- ===== timeline item ===== -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> August 2018 - June 2022
+                                        </h3>
+                                        <h4 class="timeline-title">Duy Tan University</h4>
+                                        <p class="timeline-text">
+                                            Major: Big Data & Machine Learning with GPA: 3.8/4
+                                            <br />
+                                            Some activities:
+                                            <br />
+                                            WORLD INNOVATION DAY HACKATHON
+
+                                            DANANG CODE TOUR - DUY TAN UNIVERSITY 2021
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience padd-15">
+                        <h3 class="title">Experience</h3>
+                        <div class="row">
+                            <div class="timeline-box padd-15">
+                                <div class="timeline shadow-dark">
+                                    <!-- ===== timeline item ===== -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date">
+                                            <i class="fa fa-calendar"></i> December 2019
+                                        </h3>
+                                        <h4 class="timeline-title">Rikkeisoft company</h4>
+                                        <p class="timeline-text">Take part in RTEP </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ===== About Section End ===== -->
+<!-- ===== Blog section start ====-->
+<section class="blog section" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <a href="{% url 'blog:all_blog' %}"><h2>Blog for you</h2></a>
+            </div>
+        </div>
+        <div class="row">
+            <!-- ===== blog item Start ====== -->
+            {% for blog in blogs %}
+            <div class="blog-item padd-15">
+                <div class="blog-item-inner">
+                    <div class="image">
+                        <img src="{{ blog.image.url }}" alt="image" />
+                    </div>
+                    <h4>{{blog.title}}</h4>
+                    <p>{{blog.content | truncatechars:100 }}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+            <!-- ===== blog item End ====== -->
+
+        </div>
+    </div>
+</section>
+<!-- ===== blog Section End ===== -->
+
+<!-- ===== project Section Start ===== -->
+<section class="project section" id="project">
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Projects</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="project-heading padd-15">
+                <h2>My Last Projects :</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- ====== project item start ====== -->
+            {% for project in projects %}
+            <div class="project-item padd-15">
+                <div class="project-item-inner shadow-dark">
+                    <div class="project-img">
+                        <img src="{{ project.image.url }}" alt="" />
+                    </div>
+                    <!-- <h4>{{ project.title}}</h4>
+                    <span>{{ project.description}}</span> -->
+                </div>
+
+            </div>
+            {% endfor %}
+            <!-- ====== project item End ====== -->
+
+
+        </div>
+    </div>
+</section>
+<!-- ===== project Section End ===== -->
+
+
+<!-- ===== Contact Section Start ===== -->
+<section class="contact section" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Contact Me</h2>
+            </div>
+        </div>
+        <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
+        <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+        <div class="row">
+            <!-- ===== Contact info item start ====== -->
+            <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-phone"></i></div>
+                <h4>Call Us On</h4>
+                <p>+84 395. 822. 059</p>
+            </div>
+            <!-- ===== Contact info item end ====== -->
+            <!-- ===== Contact info item start ====== -->
+            <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                <h4>Office</h4>
+                <p>Danang</p>
+            </div>
+            <!-- ===== Contact info item end ====== -->
+            <!-- ===== Contact info item start ====== -->
+            <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-envelope"></i></div>
+                <h4>Email</h4>
+                <p>quangthin2000@gmail.com</p>
+            </div>
+            <!-- ===== Contact info item end ====== -->
+            <!-- ===== Contact info item start ====== -->
+            <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                <h4>Website</h4>
+                <p>https://quangthin2000.github.io/</p>
+            </div>
+            <!-- ===== Contact info item end ====== -->
+        </div>
+        <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+        <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
+        <!-- ====== Contact Form ====== -->
+        <div class="row">
+            <div class="contact-form padd-15">
+                <div class="row">
+                    <div class="form-item col-6 padd-15">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-item col-6 padd-15">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-item col-12 padd-15">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-item col-12 padd-15">
+                        <div class="form-group">
+                            <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-item col-12 padd-15">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ===== Contact Section End ===== -->
+{% endblock %}

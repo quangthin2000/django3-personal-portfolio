@@ -1,0 +1,29 @@
+{% extends 'portfolio/base.html' %}
+{% block detailblog %}
+
+
+<section class="blog section">
+    <div class="container">
+        <article class="blog-post hentry post-filter post-6">
+            <div class="post-filter-inside-wrap">
+
+                <div class="detail-content-box">
+                    <h3>
+                        <a href="/">Trang chủ / </a>
+                        <a href="/">{{blog.tag}} /</a>
+                        <a href="/">{{blog.title}}</a>
+                    </h3>
+                    <div class="post-snip">
+                        <span class="post-date published"><b>{{blog.created_at}}</b></span>
+                    </div>
+                    <div class="">
+                        <span>
+                            {{blog.content}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+{% endblock%}

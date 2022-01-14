@@ -1,0 +1,31 @@
+{% extends 'portfolio/base.html' %}
+{% block allblog %}
+<section class="blog section">
+    <div class="container">
+        {% for blog in blogs %}
+        <article class="blog-post hentry post-filter post-6">
+            <div class="post-filter-inside-wrap">
+                <div class="post-filter-image">
+                    <a class="post-filter-link image-nos" href="/">
+                        <img class="snip-thumbnail lazy-img"
+                            src="{{blog.image.url}}">
+                    </a>
+                </div>
+                <div class="content-box">
+                    <a href="{% url 'blog:detail' blog.id %}"><h2>{{ blog.title }}</h2></a>
+                    <div class="post-snip">
+                        <p class="post-snippet">{{ blog.content | truncatechars:400 }}</p>
+                        <!-- <span class="post-author">Quang Thìn Trần</span> -->
+                        <span class="post-date published"><b>{{ blog.created_at }}</b></span>
+                    </div>
+                    <span class="post-flex">
+                        <b>{{blog.tag}}</b>
+                    </span>
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}
